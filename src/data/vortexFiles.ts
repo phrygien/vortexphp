@@ -11,6 +11,7 @@ export interface VortexFile {
 const rawModules = import.meta.glob(
   [
     '/mecene/**/*',
+    '/mecene/packages/*/.gitignore',
     '/mecene/packages/app/.env.example',
     '/mecene/packages/app/public/.htaccess',
     '/mecene/packages/app/storage/**/.gitkeep',

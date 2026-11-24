@@ -27,7 +27,7 @@
     ],
     "post-create-project-cmd": [
       "@php artisan key:generate --ansi",
-      "@php -r \"foreach (['storage/cache', 'storage/logs', 'database'] as $dir) { if (!is_dir($dir)) mkdir($dir, 0775, true); @chmod($dir, 0775); }\""
+      "@php -r \"is_dir('storage/cache') || mkdir('storage/cache', 0775, true); is_dir('storage/logs') || mkdir('storage/logs', 0775, true); is_dir('database') || mkdir('database', 0775, true);\""
     ]
   },
   "extra": {
