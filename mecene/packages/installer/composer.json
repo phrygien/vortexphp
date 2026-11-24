@@ -1,0 +1,26 @@
+{
+  "name": "mecene/installer",
+  "description": "Installateur CLI global pour créer de nouvelles applications Mecene en une commande.",
+  "keywords": ["mecene", "installer", "cli", "php83"],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "symfony/console": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mecene\\Installer\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/mecene"
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

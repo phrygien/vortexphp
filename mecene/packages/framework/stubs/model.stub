@@ -1,0 +1,14 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Models;
+
+use Mecene\Database\ORM\Model;
+
+class {{class}} extends Model
+{
+    protected static string $table = '{{table}}';
+
+    protected array $fillable = [];
+}

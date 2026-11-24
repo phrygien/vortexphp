@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Controllers;
+
+use Mecene\Http\Request;
+use Mecene\Http\Response;
+use Mecene\Routing\Controller;
+
+class {{class}} extends Controller
+{
+    public function index(Request $request): Response
+    {
+        return $this->json([
+            'controller' => '{{class}}',
+            'path' => $request->path(),
+        ]);
+    }
+}

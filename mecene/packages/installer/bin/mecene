@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Symfony\Component\Console\Application;
+use Mecene\Installer\NewCommand;
+
+// Charge l'autoloader local ou celui de l'installation globale Composer
+$autoloadPaths = [
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+];
+
+foreach ($autoloadPaths as $file) {
+    if (file_exists($file)) {
+        require $file;
+        break;
+    }
+}
+
+$app = new Application('Mecene Installer', '1.0.0');
+$app->add(new NewCommand());
+$app->setDefaultCommand('new');
+
+exit($app->run());

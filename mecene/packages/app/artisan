@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Mecene\Console\Kernel;
+use Mecene\Foundation\Application;
+
+require __DIR__ . '/vendor/autoload.php';
+
+/** @var Application $app */
+$app = require __DIR__ . '/bootstrap/app.php';
+
+exit($app->make(Kernel::class)->run());

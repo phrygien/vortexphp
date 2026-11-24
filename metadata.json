@@ -1,0 +1,8 @@
+{
+  "name": "Vortex PHP 8.3+ Micro-Framework",
+  "description": "Architecture complète et explorateur interactif du micro-framework PHP 8.3+ Vortex inspiré de Laravel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
